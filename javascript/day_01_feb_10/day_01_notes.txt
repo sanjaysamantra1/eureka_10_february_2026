@@ -1,0 +1,49 @@
+Tools / Softwares
+==================
+1. NodeJS
+   https://nodejs.org/en/download
+
+   Run the below command in terminal to verify nodejs in installed?
+   node -v
+
+
+2. vscode ( Code Editor )
+   https://code.visualstudio.com/download
+
+
+
+Web Development
+===============
+-Developing Websites 
+
+1. FrontEnd : User Interface ( Look & Feel )
+        HTML : Content ( div, paragraph, image, table, list, form )
+        CSS :  Styling ( border , background, width , height, margin, padding )
+        Bootstrap : CSS Library (Twitter) Pre-defined CSS classes
+        Javascript : Behaviour of a webpage
+        Angular/React : Javascript Frameworks ( RAD , CLI, Form , Routing )
+
+2. BackEnd : Develop APIs ( java, .net, python, PHP, NodeJs, Go )
+
+3. DataBase : Holds the data ( oracle , mysql , mongoDB )
+
+
+Product List page
+================= 
+1. create an HTML File (product_list.html)
+
+2. !  ( emmet / shortcut ) add boilerplate code
+   https://docs.emmet.io/cheat-sheet/
+
+3. Add HTML,CSS Code
+
+4. To Open/Run HTML File in Browser
+    a. install vscode extension (open in browser)
+    b.  alt+b     /   al=shift+b
+
+   
+
+DOM
+====
+-Document Object Model
+-Hierarchical representation of all HTML elements inside browser
