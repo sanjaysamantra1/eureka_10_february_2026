@@ -1,0 +1,13 @@
+<script>
+    var a = 10;
+    let b = 20;
+    const c = 30;
+    console.log(`Global-  a:${a}  b:${b}  c:${c}`);
+
+    var a = 100; // no error , ideally javascript should throw error 
+    console.log(`Global-  a:${a}  b:${b}  c:${c}`);
+
+    /* let b = 200; // Cannot redeclare
+    let c = 300; // Cannot redeclare */
+
+</script>

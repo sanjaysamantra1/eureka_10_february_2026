@@ -1,0 +1,60 @@
+ Primitive							Non-primitive/Complex   
+  --------------					-------------------------
+  1. number							1. Object (Object & Array)
+  2. string								
+  3. boolean(true,false)
+  4. undefined(undefined)
+  5. symbol(ES-6)
+  6. bigint (const x = 2n ** 53n;)
+     appending n to the end of an integer literal
+
+
+null vs undefined
+------------------
+-when a variable is declared without any value ,javascript assigns undefined value 
+-'null' is an intensional value assigned by developers
+
+-typeof 'undefined' value is 'undefined'
+-typeof 'null' value is object
+
+Notes: Primitives are compared by value, non-primitives are compared by referrence
+
+
+
+Variables
+=========
+-A container to store data.
+-in javascript a variable can be declared by using 1 of the below 3 keywords
+    var
+    let
+    const
+
+
+        var						let						 const
+======================================================================
+1.since begining		 1.ECMASCRIPT-6(2015)		1.ECMASCRIPT-6(2015)
+2.value can be changed   2.value can be changed     2.cann't be changed
+3.initialization is		 3.initialization is		3.mandatory
+	not mandatory           not mandatory	
+4.can be redeclared		 4.cann't be redeclared		4.cann't be redeclared
+5.function/global		 5.block/function/global	5.block/function/global
+6.TDZ - No			 	 6.TDZ - Yes				6.TDZ - Yes
+
+
+Javascript - is a programming language, follows ECMASCRIPT Standards.
+ECMA - European Computer Manufacturers Association.
+ECMASCRIPT -  is a standard for the scripting languages.
+
+
+ES_5    <= june 2015
+ES_6    2015   ( const , let , class , extends , module , .......)
+ES_7    2016   
+ES_8    2017   
+ES_9    2018   
+ES_10    2019   
+ES_11    2020   
+ES_12    2021   
+ES_13    2022   
+ES_14    2023   
+ES_15    2024  
+ES_16    2025
