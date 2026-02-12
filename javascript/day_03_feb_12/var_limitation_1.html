@@ -1,0 +1,20 @@
+<script>
+    function f1() {
+        if (true) {
+            var a = 10;
+            console.log('Block a: ', a); // 10
+        }
+        console.log('Function a: ', a); // 10
+    }
+    f1();
+    // Even though 'a' is declared inside a block, its scope is not block scoped
+
+    function f2() {
+        if (true) {
+            let x = 10;
+            console.log('Block x: ', x); // 10
+        }
+        console.log('Function x: ', x); // x is not defined
+    }
+    f2();
+</script>

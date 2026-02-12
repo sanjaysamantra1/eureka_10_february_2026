@@ -1,0 +1,61 @@
+    var						let						 const
+======================================================================
+1.since begining		 1.ECMASCRIPT-6(2015)		1.ECMASCRIPT-6(2015)
+2.value can be changed   2.value can be changed     2.cann't be changed
+3.initialization is		 3.initialization is		3.mandatory
+	not mandatory           not mandatory	
+4.can be redeclared		 4.cann't be redeclared		4.cann't be redeclared
+5.function/global		 5.block/function/global	5.block/function/global
+6.TDZ - No			 	 6.TDZ - Yes				6.TDZ - Yes
+
+
+
+Variable Scope
+==============
+global :  declared outside a function , can be used by any function
+function : declared inside a function, used by that function only
+block : declared inside a block, used by that block only
+
+
+
+How Javascript Works
+====================
+-When a JavaScript program runs, 1 Global Execution Context (anonymous) is created.
+-For every function call, a new Function Execution Context (f1,f2,f3) is created.
+-Execution Context = the environment in which code executes.
+-Each execution context has two phases: 
+	1. creation phase. (Memory is allocated for variables and functions; 'var' variables are initialized with undefined)
+	2. execution phase. (Code is executed line by line; variables receive their assigned values and functions are invoked)
+
+
+
+Hoisting
+========
+-var/let/const , For every variable memory is allocated during creation phase
+  but only 'var' variables gets 'undefined' value
+-var variables are accesible even before actual values being initialized , hoisting
+
+
+Temporal Dead zone
+==================
+-var/let/const , For every variable memory is allocated during creation phase
+  but only 'var' variables gets 'undefined' value
+-let and const variables dont get any value
+ b: <value unavailable>
+ c: <value unavailable>
+-they are accesible only after they are initialized with actual values
+-if we try to access them before they are initialized with actual values,
+erro is thrown : Cannot access 'b' before initialization
+
+
+
+functions
+=========
+1. Function Declaration
+2. Function Expression
+3. Arrow Function
+
+
+Arrow Function Limitations
+===========================
+-Arrow functions shouldn't be used as object method

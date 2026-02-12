@@ -1,0 +1,23 @@
+<script>
+    // Function Declaration
+    add(2, 3);
+    function add(a, b) {
+        console.log(`Addition of ${a} and ${b} is ${a + b}`)
+    }
+    add(10, 20);
+
+    // Function Expression
+    // sub(3,2)
+    let sub = function (a, b) {
+        console.log(`Subtraction of ${a} and ${b} is ${a - b}`)
+    }
+    sub(20, 10);
+
+    // Function Declarations are hoisted, but function expression are not
+
+
+    let mul = (a, b) => {
+        console.log(`Multiplication of ${a} and ${b} is ${a - b}`)
+    }
+    mul(20, 10);
+</script>

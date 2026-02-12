@@ -1,0 +1,27 @@
+<script>
+    console.log('Global Code Starts...');
+    console.log(`a: ${a}`); // undefined
+    // console.log(`b: ${b}`);
+    // console.log(`c: ${c}`);
+    var a = 10;
+    let b = 20;
+    const c = 30;
+    console.log(`a: ${a}`);
+    console.log(`b: ${b}`);
+    console.log(`c: ${c}`);
+    function f1() {
+        console.log('f1 starts...')
+        console.log(name)
+        console.log(age)
+        // console.log(role); // Cannot access 'role' before initialization
+        var name = 'sanjay';
+        var age = 50;
+        let role = 'Trainer';
+        console.log(name)
+        console.log(age)
+        console.log(role)
+        console.log('f1 ends...')
+    }
+    f1();
+    console.log('Global Code Ends...')
+</script>
