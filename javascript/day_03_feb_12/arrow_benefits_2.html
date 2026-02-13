@@ -7,7 +7,7 @@
             console.log('fullname1 : ', this)
             console.log(this.firstName, this.lasstName)
         }
-        fullName2 = () => { // this = where i am written , this = Student
+        fullName2 = () => { // this = where i am written(Lexical Scope) , this = Student
             console.log('fullname2 : ', this)
             console.log(this.firstName, this.lasstName)
         }
@@ -16,11 +16,6 @@
     stdObj.fullName1();
     stdObj.fullName2();
 
-    let a = stdObj.fullName2;
-    a();
-    let b = a;
-    b();
-
-    let x = stdObj.fullName1;
-    x();
+    setTimeout(stdObj.fullName2, 5000);
+    setTimeout(stdObj.fullName1, 9000);
 </script>

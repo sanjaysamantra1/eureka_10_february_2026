@@ -1,0 +1,44 @@
+<script>
+    let cars = ['Tata', 'Honda', 'Maruti', 'Hyundai', 'Toyota', 'Tata', 'Maruti'];
+
+    console.log('car at index 2 : ', cars[2]);
+    console.log('car at index 2 : ', cars.at(2));
+
+    console.log('car at index -2 : ', cars[-2]);
+    console.log('car at index -2 : ', cars.at(-2));
+
+    console.log('Index of Maruti: ', cars.indexOf('Maruti')); // 2
+    console.log('Index of Maruti: ', cars.lastIndexOf('Maruti')); // 6
+
+    console.log('in cars array Honda present ', cars.includes('Honda')); // true
+    console.log('in cars array BMW present ', cars.includes('BMW')); // false
+
+
+    let employees = [ // Array of objects
+        { "eId": 101, "name": "sanjay", "sal": 5000, "gender": "male" },
+        { "eId": 104, "name": "geeta", "sal": 8000, "gender": "female" },
+        { "eId": 103, "name": "sameer", "sal": 7000, "gender": "male" },
+        { "eId": 102, "name": "sita", "sal": 9000, "gender": "female" },
+        { "eId": 105, "name": "deepak", "sal": 8000, "gender": "male" }
+    ];
+    // display the first female employee
+    let first_female_emp = employees.find(emp => emp.gender == 'female');
+    console.log('first_female_emp:', first_female_emp)
+
+    // display the index of first female employee
+    let first_female_emp_ind = employees.findIndex(emp => emp.gender == 'female');
+    console.log('first_female_emp_ind:', first_female_emp_ind)
+
+    // display the last female employee
+    let last_female_emp = employees.findLast(emp => emp.gender == 'female');
+    console.log('last_female_emp:', last_female_emp)
+
+    // display the index of last female employee
+    let last_female_emp_ind = employees.findLastIndex(emp => emp.gender == 'female');
+    console.log('last_female_emp_ind:', last_female_emp_ind)
+
+
+    // display all the female employees
+    let all_female_emp = employees.filter(emp => emp.gender == 'female');
+    console.log('all_female_emp:', all_female_emp)
+</script>

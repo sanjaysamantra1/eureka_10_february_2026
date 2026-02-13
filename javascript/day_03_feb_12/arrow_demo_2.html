@@ -1,0 +1,14 @@
+<script>
+    let arr = [10, 20, 30, 40, 50];
+    // increment each value by 5
+    function incrementBy5(ele) {
+        return ele + 5;
+    }
+    let res1 = arr.map(incrementBy5);
+    console.log(res1)
+    // map() is higherOrder , incrementBy5 is callback
+
+
+    let res2 = arr.map((ele) => ele + 5);
+    console.log(res2)
+</script>

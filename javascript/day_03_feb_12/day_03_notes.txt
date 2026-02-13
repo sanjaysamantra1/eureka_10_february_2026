@@ -59,3 +59,24 @@ functions
 Arrow Function Limitations
 ===========================
 -Arrow functions shouldn't be used as object method
+
+
+Arrow Function Benefits
+========================
+-Shorter syntax
+-No Function Keyword
+-implicit return
+-Body is optional
+
+
+
+HigherOrder Function
+=====================
+-A function which takes another function as arguement, is called higher order.
+
+
+CallBack
+========
+-A function that is passed as arguement to another function , is callback function
+
+
