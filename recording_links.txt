@@ -9,3 +9,7 @@ Passcode: =%@2tMOw
 day_03_feb_12:
 https://zoom.us/rec/share/-Rszabn258xAHE7kiv_eFwMBrxFbuSit6HI_0V6cQC19tvOnd2KkKTfh6gYNw2J5.JN4p_QE89S9WVysj 
 Passcode: zXw$+=4E
+
+day_04_feb_13:
+https://zoom.us/rec/share/8-euArj-ONicqGePnNTTqNuGafWs0_dS1qEZXI3DFg95IrYOZmSqqckZdU61TeD-.ZrJ3RDPD0e56YDhx 
+Passcode: ?d4UNFF1
