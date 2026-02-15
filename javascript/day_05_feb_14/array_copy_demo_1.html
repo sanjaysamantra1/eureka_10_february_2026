@@ -1,0 +1,10 @@
+<script>
+    let arr1 = [10, 20];
+    let arr2 = arr1;    // Address Copy / Reference Copy 
+    // a new array is not created, the same address got stored in arr2
+    arr1.push(30);
+    arr2.push(40);
+    console.log('arr1: ', arr1);  // [10, 20, 30, 40]
+    console.log('arr2: ', arr2);  // [10, 20, 30, 40]
+
+</script>

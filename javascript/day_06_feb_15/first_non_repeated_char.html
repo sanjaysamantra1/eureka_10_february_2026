@@ -1,0 +1,23 @@
+<script>
+    // print the all non repeated char
+
+    /*
+    1. loop each character // e
+    2. a. find the index of the char  // 0
+    b. find the last index of the char  // 10
+    3. compare indexvalue lastIndex value
+    yes - this is the non-repeated char
+    No - repeated char
+    4. return the non-repeated char
+    5. stop the iteration
+    */
+    let str = 'entertainment'; // 
+    for (char of str) {
+        let a = str.indexOf(char);
+        let b = str.lastIndexOf(char);
+        if (a == b) {
+            console.log(char);
+            break;
+        }
+    }
+</script>

@@ -1,0 +1,37 @@
+<script>
+    /*  Print the occurence of each character in a string
+     input: 'entertainment'
+     output: { e: 3, n: 2, t: 3 ....} */
+
+    /* 
+        1. create an empty object/dictinary
+        2. go through each character in the string
+        3. if character/ball we got , is already existing
+                No  - set the count -1
+                Yes - increase the count by 1
+        4. print th map/count
+
+        Max Count:
+            assume maxCount:1 maxRepeatedChar:''
+        */
+
+    let str = 'hello world'
+    let result = {};
+    let maxCount = 1;
+    let maxRepeatedChar = '';
+
+    for (char of str) { // char : e/n/t
+        if (result[char]) { // yes /No
+            result[char] = result[char] + 1
+        } else {
+            result[char] = 1;
+        }
+
+        if (result[char] > maxCount) {  // 3   >  1
+            maxCount = result[char];
+            maxRepeatedChar = char;
+        }
+    }
+    console.log(result)
+    console.log(maxRepeatedChar, maxCount)
+</script>

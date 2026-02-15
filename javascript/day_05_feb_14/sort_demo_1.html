@@ -1,0 +1,20 @@
+<script>
+    let arr1 = [20, 10, 50, 30, 40];
+    arr1.sort();
+    console.log(arr1);
+
+    let arr2 = [10, 9, 8, 7, 5, 101, 102, 103, 91, 81, 71, 92, 82, 73, 3];
+    arr2.sort();
+    console.log(arr2); // as if the values are strings
+
+    // Numeric sort - Asc
+    arr2.sort((a, b) => a - b);
+    console.log(arr2)
+
+    // Numeric sort - Desc
+    function sortMyArrDesc(a, b) {
+        return b - a;
+    }
+    arr2.sort(sortMyArrDesc);
+    console.log(arr2)
+</script>
