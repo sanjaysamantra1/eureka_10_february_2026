@@ -1,0 +1,25 @@
+<script>
+    console.log(Math.max(10, 20, 30, 40, 50)); // 50
+    console.log(Math.min(10, 20, 30, 40, 50)); // 10
+
+    let arr = [10, 20, 30, 40, 50];
+
+    console.log(Math.max(arr));
+    console.log(Math.min(arr));
+
+    console.log(Math.max(...arr));
+    console.log(Math.min(...arr));
+
+
+
+    function sumAndAvg(math, english, science) {
+        let sum = math + english + science;
+        let avg = sum / 3;
+        console.log(`Sum is:${sum} , Average is: ${avg}`)
+    }
+    sumAndAvg(80, 75, 85);
+
+    let marks = [80, 75, 85]
+    sumAndAvg(marks);
+    sumAndAvg(...marks);
+</script>

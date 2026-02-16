@@ -1,0 +1,27 @@
+<script>
+    let arr1 = [10, 20];
+    let arr2 = arr1;    // Address Copy / Reference Copy 
+    // a new array is not created, the same address got stored in arr2
+    arr1.push(30);
+    arr2.push(40);
+    console.log('arr1: ', arr1);  // [10, 20, 30, 40]
+    console.log('arr2: ', arr2);  // [10, 20, 30, 40]
+
+
+    // shallow copy
+    let arr3 = [10, 20, [30, 31]];
+    let arr4 = [...arr3]; // spread - copy values - shallow copy
+    arr4.push(40, 50);
+    arr4[2].push(32, 33);
+    console.log('arr3: ', arr3);
+    console.log('arr4: ', arr4);
+
+
+    // Deep copy
+    let arr5 = [10, 20, [30, 31]];
+    let arr6 = structuredClone(arr5); //  copy values - deep copy
+    arr6.push(40, 50);
+    arr6[2].push(32, 33);
+    console.log('arr5: ', arr5);
+    console.log('arr6: ', arr6);
+</script>

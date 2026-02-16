@@ -1,0 +1,14 @@
+<script>
+    function add(a, b, c = 0) { // c=0 default param value
+        console.log(a + b + c)
+    }
+    add(10, 20);
+    add(10, 20, 30);
+
+
+    function greet(msg, user = 'Guest') {
+        console.log(`${msg}, ${user}`)
+    }
+    greet('Welcome', 'Sanjay')
+    greet('Welcome')
+</script>

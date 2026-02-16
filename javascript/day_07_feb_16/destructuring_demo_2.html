@@ -1,0 +1,21 @@
+<script>
+    /* function createUser(firstName, lastName, email, phone, gender, role, isActive) {
+        // save the data in data base
+        return 'user Created Successfully!!!'
+    }
+    createUser('Dillip', 'Verma', 'dillip@gmail.com', 12345, 'male', 'user', true); */
+
+    // 1. miss to pass param
+    // 2. ordering of the params matters
+    // 3. its not readbale , maintainable
+    // 4. no scope of making params optional
+
+
+    function createUser({ firstName, lastName, email, phone, gender, role, isActive }) {
+        // const { firstName, lastName, email, phone, gender, role, isActive } = userObj;
+        // save the data in data base
+        console.log(firstName, lastName, email, phone, gender, role, isActive)
+        return 'user Created Successfully!!!'
+    }
+    createUser({ firstName: 'sanjay', lastName: 'samantra', phone: 1122334455 });
+</script>
