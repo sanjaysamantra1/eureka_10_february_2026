@@ -38,3 +38,7 @@ Passcode: yj0r=38P
 day_10_feb_19:
 https://zoom.us/rec/share/FTZsZHhyKEMmy_JiqbCSvnwbj6t3EdGRc691wvrM2t_zm4b9FzHRc0mH84NRNVHF.29_HoGXQFIntikeg 
 Passcode: MyF?1Xwd
+
+day_11_feb_20:
+https://zoom.us/rec/share/XS72x4MQdqGZwG57x9Fxt9ZgtW0pD6__tbJRnm4gwTtdstwhHad-WV3PvQhixeM.TKT0sQaiNG_pb8Sr 
+Passcode: 7@VQLj9s
