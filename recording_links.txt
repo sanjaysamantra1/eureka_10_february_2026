@@ -42,3 +42,7 @@ Passcode: MyF?1Xwd
 day_11_feb_20:
 https://zoom.us/rec/share/XS72x4MQdqGZwG57x9Fxt9ZgtW0pD6__tbJRnm4gwTtdstwhHad-WV3PvQhixeM.TKT0sQaiNG_pb8Sr 
 Passcode: 7@VQLj9s
+
+day_12_feb_21:
+https://zoom.us/rec/share/A_0uuepc9o-2_-6dh9PSYbR-eW9EU9RDl_778pP6TWpgR2nk5pa-NZxUixNNz5dg.-dty0k7wgrVUDb9T 
+Passcode: V!iq#3VH
