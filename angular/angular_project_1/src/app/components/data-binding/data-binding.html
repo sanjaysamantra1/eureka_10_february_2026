@@ -1,0 +1,44 @@
+<h3 class="text-center">Let's learn Data Binding</h3>
+
+<!-- https://www.w3schools.com/html/html_form_input_types.asp
+https://www.w3schools.com/html/html_form_attributes.asp -->
+
+<div class="border border-3 rounded-3 p-3 m-3">
+  <div> User Name : {{userName}} </div>
+
+  <img src="{{img_url}}" alt="" width="200" height="200" />
+  <img [src]="img_url" alt="" width="200" height="200" />
+  <img bind-src="img_url" alt="" width="200" height="200" />
+
+  <div class="my-2">
+    <div>userName(1-way) : <input value="{{userName}}" /></div>
+    <div>userName(1-way) : <input [value]="userName" /></div>
+    <div>userName(1-way) : <input bind-value="userName" /></div>
+    <div>userName(2-way) : <input [(ngModel)]="userName" /></div>
+
+    <div>
+      <button class="btn btn-primary" disabled="{{flag}}">Click Me</button>
+      <button class="btn btn-primary mx-2" [disabled]="flag">Click Me</button>
+      <button class="btn btn-primary" bind-disabled="flag">Click Me</button>
+
+      <div>Flag value: {{flag}}</div>
+      <button class="btn btn-primary mx-2" (click)="toggleFlag()">Toggle Flag</button>
+      <button class="btn btn-primary mx-2" on-click="toggleFlag()">Toggle Flag</button>
+    </div>
+  </div>
+</div>
+
+<div class="border border-3 rounded-3 p-3 m-3">
+  <div>Add 2 numbers using 2-way binding</div>
+  <input type="number" [(ngModel)]="num1" />
+  <input type="number" [(ngModel)]="num2" />
+  <div>Addition of {{num1}} and {{num2}} is {{num1+num2}}</div>
+</div>
+
+<div class="border border-3 rounded-3 p-3 m-3">
+  <div>Add 2 numbers using Template Reference Variable</div>
+  <input type="number" #myBox1 />
+  <input type="number" #myBox2 />
+  <button (click)="addition(myBox1.value , myBox2.value)">Add</button>
+  <div>Addition of {{myBox1.value}} & {{myBox2.value}} is {{addResult}}</div>
+</div>
