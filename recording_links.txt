@@ -50,3 +50,7 @@ Passcode: V!iq#3VH
 day_13_feb_28:
 https://zoom.us/rec/share/crY7Yxqt_nU8GZCbynqDOjMZB5ByaATuIvp60HtFaNRxnoFeJd7mS_WwbQ1NkeYM.4TVE8bQ4X26QsAys 
 Passcode: 3??8Q=6t
+
+day_14_march_02:
+https://zoom.us/rec/share/xQAw5m6wv-eLXxKx4okOEfHestX83fBVHAkjJbdSlMOo6NOIEPI8uza9fSHdyfqy.cuvHgRn_YeADGWex 
+Passcode: MRGY!0t@
