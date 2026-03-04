@@ -6,12 +6,20 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { FormsModule } from '@angular/forms';
 import Swal from 'sweetalert2';
 import Snackbar from 'awesome-snackbar';
+import { Textonly } from '../../custom_directives/textonly';
+import { Disablepaste } from '../../custom_directives/disablepaste';
+import { DisableContextMenu } from '../../custom_directives/disable-context-menu';
+import { Zoomin } from '../../custom_directives/zoomin';
 @Component({
   selector: 'app-product-list',
   imports: [
     FormsModule,
     FontAwesomeModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    Textonly,
+    Disablepaste,
+    DisableContextMenu,
+    Zoomin
   ],
   templateUrl: './product-list.html',
   styleUrl: './product-list.css',

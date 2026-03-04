@@ -2,17 +2,19 @@
 <button (click)="openSnackBar()" class="mx-2 btn btn-success">Snackbar</button>
 
 <h3 class="text-center">Product List</h3>
-<div class="container mt-2">
+<div class="container mt-2" appDisableContextMenu>
   <div class="row">
     <div class="col-sm-3">
       <select (change)="filterProducts($event)" class="form-control">
         @for (category of categorySet; track $index) {
-          <option>{{category}}</option>
+        <option>{{category}}</option>
         }
       </select>
     </div>
     <div class="col-sm-6">
-      <input type="search" class="form-control" placeholder="Search..." (input)="searchProducts($event)" />
+      <input appTextonly appDisablepaste type="search"
+        class="form-control" placeholder="Search..."
+        (input)="searchProducts($event)" />
     </div>
     <div class="col-sm-3">
       <button class="btn btn-primary" (click)="sortAsc()">Sort Asc</button>
@@ -23,7 +25,7 @@
     @for (prod of productArr | paginate: { itemsPerPage: 4, currentPage: p}; track $index) {
     <div class="col-sm-3 card">
       <img src="{{prod.image}}" class="card-img-top" alt="..." height="200px">
-      <div class="card-body text-center">
+      <div class="card-body text-center" appZoomin>
         <h5 class="card-title">{{prod.category}}</h5>
         <p class="card-text text-truncate">{{prod.title}}</p>
         <p class="card-text text-truncate">{{prod.description}}</p>
