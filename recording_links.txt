@@ -62,3 +62,7 @@ Passcode: g7XNS#&T
 day_16_march_04:
 https://zoom.us/rec/share/RoqiYVVhdHf99MvghIhrPzCGrg8eQBv0p11jMqnth0MCfM6tF0thrdWBSzei6h4q.7pD8aRmzWdsEiY5r 
 Passcode: CR@7n&yp
+
+day_17_march_05:
+https://zoom.us/rec/share/93MDMkaJqrLS3-QKfpg9JFAbi1QxKsNa0k3fhl__euZ13FYUI6eWl0rEF0Zq5mvC.AYeOTZS9pfAD_s2v 
+Passcode: Q=*u*0Te
