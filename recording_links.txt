@@ -66,3 +66,7 @@ Passcode: CR@7n&yp
 day_17_march_05:
 https://zoom.us/rec/share/93MDMkaJqrLS3-QKfpg9JFAbi1QxKsNa0k3fhl__euZ13FYUI6eWl0rEF0Zq5mvC.AYeOTZS9pfAD_s2v 
 Passcode: Q=*u*0Te
+
+day_18_march_06:
+https://zoom.us/rec/share/dAj20aANsKGk68o_BWtpXYEXWv9jOG-09VVAOgk2xC7vMJOYi2T4x0AP4lMRZzP0.l3WEN4YM6o4U961T 
+Passcode: b8G@k1PQ
