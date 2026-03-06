@@ -2,13 +2,15 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RemainingPipe } from '../../custom-pipes/remaining-pipe';
+import { MySortPipe } from '../../custom-pipes/my-sort-pipe';
 
 @Component({
   selector: 'app-pipes-demo',
   imports: [
     FormsModule,
     CommonModule,
-    RemainingPipe
+    RemainingPipe,
+    MySortPipe
   ],
   templateUrl: './pipes-demo.html',
   styleUrl: './pipes-demo.css',
@@ -20,4 +22,6 @@ export class PipesDemo {
   user = { name: 'Nikhil', age: 21, sal: 5000, address: 'Virginia' };
   arr = [10, 20, 30, 40, 50, 60, 70];
   msg: string = 'Hello';
+
+  numArr = [40, 10, 50, 30, 20];
 }

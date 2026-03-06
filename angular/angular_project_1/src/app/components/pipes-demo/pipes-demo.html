@@ -6,6 +6,7 @@
   <div>with uppercase pipe, Name : {{myName | uppercase}}</div>
   <div>with lowercase pipe, Name : {{myName | lowercase}}</div>
   <div>with titlecase pipe, Name : {{myName | titlecase}}</div>
+  <div><input [(ngModel)]="myName"></div>
 </div>
 
 <div class="border border-2 rounded-2 p-2 m-2">
@@ -16,6 +17,7 @@
   <!-- input | pipeName : 'arg-1'-->
   <div>Salary: {{mySal | currency : '&euro;'}}</div>
   <div>Salary: {{mySal | currency : '&#x5143;'}}</div>
+  <div><input type="number" [(ngModel)]="mySal"></div>
 </div>
 
 <div class="border border-2 rounded-2 p-2 m-2">
@@ -63,7 +65,7 @@
 <div class="border border-2 rounded-2 p-2 m-2">
   <div>keyvalue pipe:</div>
   @for(entry of user | keyvalue;track $index){
-    <h5>{{entry.key}}---{{entry.value}}</h5>
+  <h5>{{entry.key}}---{{entry.value}}</h5>
   }
 </div>
 
@@ -79,4 +81,16 @@
   <div>Custom Pipe(remaining):</div>
   <textarea [(ngModel)]='msg' maxlength="100"></textarea>
   <div>Remaining:{{msg | remaining}}</div>
+</div>
+
+
+<div class="border border-2 rounded-2 p-2 m-2">
+  <div>Pure & Impure Pipe:</div>
+  @for (item of numArr | mySort; track $index) {
+    <b>{{item}}, &nbsp;</b>
+  }
+  <div>
+    <input type="number" #newNum>
+    <button class="btn btn-primary mx-2" (click)="numArr.push(+newNum.value)">Add</button>
+  </div>
 </div>

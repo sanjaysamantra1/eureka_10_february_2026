@@ -1,0 +1,14 @@
+<div class="border border-3 rounded-3 text-center row mt-2">
+  <div>
+    This is Parent Component
+    <div>My Own Data a: {{a}}</div>
+    <div>My Child1's data cars: {{child1.cars}}</div>
+    <div>My Child1's data User: {{userInfo.name}}=={{userInfo.add}}</div>
+  </div>
+  <div class="col border border-2 rounded-2 m-1">
+    <app-child1-demo [a]="a" #child1 (eventObj)="receiveDataFromChild($event)"></app-child1-demo>
+  </div>
+  <div class="col border border-2 rounded-2 m-1">
+    <app-child2-demo [aChild2]="a" [cars]="child1.cars"></app-child2-demo>
+  </div>
+</div>

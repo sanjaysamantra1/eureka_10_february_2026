@@ -3,6 +3,7 @@ import { DataBinding } from '../data-binding/data-binding';
 import { DirectivesDemo } from '../directives-demo/directives-demo';
 import { ProductList } from '../product-list/product-list';
 import { PipesDemo } from '../pipes-demo/pipes-demo';
+import { ParentDemo } from '../parent-demo/parent-demo';
 
 @Component({
   selector: 'app-body',
@@ -10,7 +11,8 @@ import { PipesDemo } from '../pipes-demo/pipes-demo';
     // DataBinding,
     // DirectivesDemo
     // ProductList
-    PipesDemo
+    // PipesDemo
+    ParentDemo
   ],
   templateUrl: './body.html',
   styleUrl: './body.css',
