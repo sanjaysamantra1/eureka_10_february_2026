@@ -70,3 +70,7 @@ Passcode: Q=*u*0Te
 day_18_march_06:
 https://zoom.us/rec/share/dAj20aANsKGk68o_BWtpXYEXWv9jOG-09VVAOgk2xC7vMJOYi2T4x0AP4lMRZzP0.l3WEN4YM6o4U961T 
 Passcode: b8G@k1PQ
+
+day_19_march_07:
+https://zoom.us/rec/share/YoXNUWztGbg8z3757r-BZRTsqQ-Y_Jo-3D4um9QpK25bkU_-ePrNQwPL8OGXViJw.U4fTxdo9iLS0M3wA 
+Passcode: Wn=L1kPM
