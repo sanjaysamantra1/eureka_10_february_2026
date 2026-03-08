@@ -90,6 +90,8 @@ Num: <input type="number" [(ngModel)]="num" />
 <div class="border border-3 rounded-3 p-3 m-3">
   <div>ng-content/ Content projection</div>
   <app-my-modal>
-     <img width="200" height="200" src="https://platri.de/wp-content/uploads/2024/01/Angular-Framework-e1649312852136.png">
+    <h2 id='MyTitle' #myTitle>This is Modal Title From Parent</h2>
+    <img width="200" height="200"
+      src="https://platri.de/wp-content/uploads/2024/01/Angular-Framework-e1649312852136.png">
   </app-my-modal>
 </div>

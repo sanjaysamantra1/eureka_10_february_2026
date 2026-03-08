@@ -4,5 +4,11 @@
   <!-- <app-directives-demo></app-directives-demo> -->
   <!-- <app-product-list></app-product-list> -->
   <!-- <app-pipes-demo></app-pipes-demo> -->
-  <app-parent-demo></app-parent-demo>
+  <!-- <app-parent-demo></app-parent-demo> -->
+  @if(flag){
+    <app-demo1></app-demo1>
+  }@else {
+    <app-demo2></app-demo2>
+  }
+  <button (click)="flag=!flag">Toggle Flag</button>
 </div>
