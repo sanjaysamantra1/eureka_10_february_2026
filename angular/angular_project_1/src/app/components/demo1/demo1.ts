@@ -1,3 +1,4 @@
+import { ObjectUtilService } from '../../services/object-util-service';
 import { MathService } from './../../services/math-service';
 import { Component, inject } from '@angular/core';
 
@@ -8,10 +9,11 @@ import { Component, inject } from '@angular/core';
   styleUrl: './demo1.css',
 })
 export class Demo1 {
-  mathService = inject(MathService); // Dependency Injection
+  // mathService = inject(MathService); // Dependency Injection
+  objectUtilService = inject(ObjectUtilService); // Dependency Injection
 
   myTimer: number;
-  constructor() {
+  constructor(private mathService:MathService) { // Dependency Injection
     this.myTimer = setInterval(() => {
       console.log('SetInterval from demo-1');
     }, 1000);
@@ -21,6 +23,9 @@ export class Demo1 {
 
     console.log('Sum:', this.mathService.sum([10, 20, 30, 40, 50]));
     console.log('Average:', this.mathService.average([10, 20, 30, 40, 50]));
+
+    console.log(this.objectUtilService.isEmpty({}));
+    console.log(this.objectUtilService.isEmpty({ a: 10 }));
   }
   ngOnDestroy() {
     console.log('Demo-1 ngOnDestroy');
