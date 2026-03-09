@@ -9,13 +9,11 @@ import { Component, ContentChild, contentChild, ViewChild } from '@angular/core'
 export class MyModal {
   @ContentChild('myTitle') myTitle: any;
   @ViewChild('myBox') myBox: any;
-
   constructor() {
     console.log('MyModal constructor');
     console.log(this.myTitle);
     console.log(this.myBox);
   }
-
   ngAfterContentInit() {
     console.log('MyModal ngAfterContentInit');
     console.log(this.myTitle);
