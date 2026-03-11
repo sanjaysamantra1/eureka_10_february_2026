@@ -10,6 +10,6 @@ export class CommentService {
   httpClient = inject(HttpClient);
 
   getAllComments(): Observable<Comment[]> {
-    return this.httpClient.get<Comment[]>('https://jsonplaceholder.typicode.com/comments');
+    return this.httpClient.get<Comment[]>('ttps://jsonplaceholder.typicode.com/comments');
   }
 }
