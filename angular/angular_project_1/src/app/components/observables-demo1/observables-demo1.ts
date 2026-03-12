@@ -1,6 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-import { filter, from, interval, map } from 'rxjs';
+import { Component, inject } from '@angular/core';
+import { filter, forkJoin, from, interval, map, mergeMap, of } from 'rxjs';
 
 @Component({
   selector: 'app-observables-demo1',
@@ -9,9 +10,13 @@ import { filter, from, interval, map } from 'rxjs';
   styleUrl: './observables-demo1.css',
 })
 export class ObservablesDemo1 {
+  httpClient = inject(HttpClient);
+
   ngOnInit() {
     // this.from_demo();
-    this.interval_demo();
+    // this.interval_demo();
+    // this.formjoin_demo();
+    this.mergeMap_demo();
   }
 
   from_demo() {
@@ -47,4 +52,23 @@ export class ObservablesDemo1 {
   }
 
   currentTime$ = interval(1000).pipe(map(() => new Date().toLocaleTimeString()));
+
+  formjoin_demo() {
+    let api_1 = this.httpClient.get('https://jsonplaceholder.typicode.com/users');
+    let api_2 = this.httpClient.get('https://jsonplaceholder.typicode.com/comments');
+
+    forkJoin([api_1, api_2]).subscribe((responseArr) => {
+      console.log(responseArr);
+    });
+  }
+
+  mergeMap_demo(){
+    let userPublisher = of(1, 2, 3, 4, 5); // outer observable
+
+    userPublisher.pipe(mergeMap(userId => {
+      return this.httpClient.get(`https://fakestoreapi.com/carts/${userId}`) // inner observable - cart
+    })).subscribe(cartResponse => {
+      console.log(cartResponse)
+    });
+  }
 }
