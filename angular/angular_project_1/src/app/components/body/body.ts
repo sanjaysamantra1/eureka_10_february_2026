@@ -1,3 +1,4 @@
+import { ObservablesDemo1 } from './../observables-demo1/observables-demo1';
 import { Component } from '@angular/core';
 import { DataBinding } from '../data-binding/data-binding';
 import { DirectivesDemo } from '../directives-demo/directives-demo';
@@ -21,8 +22,9 @@ import { EmployeeList } from '../employee-list/employee-list';
     // Demo1,
     // Demo2
     // HttpDemo1
-    CommentList
+    // CommentList
     // EmployeeList
+    ObservablesDemo1
   ],
   templateUrl: './body.html',
   styleUrl: './body.css',
