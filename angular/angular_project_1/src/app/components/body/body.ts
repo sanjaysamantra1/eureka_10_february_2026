@@ -11,6 +11,7 @@ import { HttpDemo1 } from '../http-demo1/http-demo1';
 import { CommentList } from '../comment-list/comment-list';
 import { EmployeeList } from '../employee-list/employee-list';
 import { ObservablesDemo2 } from '../observables-demo2/observables-demo2';
+import { SubjectDemo1 } from '../subject-demo1/subject-demo1';
 
 @Component({
   selector: 'app-body',
@@ -26,11 +27,12 @@ import { ObservablesDemo2 } from '../observables-demo2/observables-demo2';
     // CommentList
     // EmployeeList
     // ObservablesDemo1
-    ObservablesDemo2
+    // ObservablesDemo2
+    SubjectDemo1,
   ],
   templateUrl: './body.html',
   styleUrl: './body.css',
 })
 export class Body {
-  flag:boolean = true;
+  flag: boolean = true;
 }
