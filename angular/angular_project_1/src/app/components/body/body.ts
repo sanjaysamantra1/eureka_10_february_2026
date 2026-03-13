@@ -10,6 +10,7 @@ import { Demo2 } from '../demo2/demo2';
 import { HttpDemo1 } from '../http-demo1/http-demo1';
 import { CommentList } from '../comment-list/comment-list';
 import { EmployeeList } from '../employee-list/employee-list';
+import { ObservablesDemo2 } from '../observables-demo2/observables-demo2';
 
 @Component({
   selector: 'app-body',
@@ -24,7 +25,8 @@ import { EmployeeList } from '../employee-list/employee-list';
     // HttpDemo1
     // CommentList
     // EmployeeList
-    ObservablesDemo1
+    // ObservablesDemo1
+    ObservablesDemo2
   ],
   templateUrl: './body.html',
   styleUrl: './body.css',

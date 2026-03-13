@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
-import { filter, forkJoin, from, interval, map, mergeMap, of } from 'rxjs';
+import { concatMap, filter, forkJoin, from, interval, map, mergeMap, of } from 'rxjs';
 
 @Component({
   selector: 'app-observables-demo1',
@@ -16,7 +16,8 @@ export class ObservablesDemo1 {
     // this.from_demo();
     // this.interval_demo();
     // this.formjoin_demo();
-    this.mergeMap_demo();
+    // this.mergeMap_demo();
+    this.concatMap_demo();
   }
 
   from_demo() {
@@ -62,13 +63,30 @@ export class ObservablesDemo1 {
     });
   }
 
-  mergeMap_demo(){
+  mergeMap_demo() {
     let userPublisher = of(1, 2, 3, 4, 5); // outer observable
 
-    userPublisher.pipe(mergeMap(userId => {
-      return this.httpClient.get(`https://fakestoreapi.com/carts/${userId}`) // inner observable - cart
-    })).subscribe(cartResponse => {
-      console.log(cartResponse)
-    });
+    userPublisher
+      .pipe(
+        mergeMap((userId) => {
+          return this.httpClient.get(`https://fakestoreapi.com/carts/${userId}`); // inner observable - cart
+        }),
+      )
+      .subscribe((cartResponse) => {
+        console.log(cartResponse);
+      });
+  }
+
+  concatMap_demo() {
+    let userPublisher = of(1, 2, 3, 4, 5); // outer observable
+    userPublisher
+      .pipe(
+        concatMap((userId) => {
+          return this.httpClient.get(`https://fakestoreapi.com/carts/${userId}`); // inner observable - cart
+        }),
+      )
+      .subscribe((cartResponse) => {
+        console.log(cartResponse);
+      });
   }
 }
