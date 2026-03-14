@@ -12,6 +12,8 @@ import { CommentList } from '../comment-list/comment-list';
 import { EmployeeList } from '../employee-list/employee-list';
 import { ObservablesDemo2 } from '../observables-demo2/observables-demo2';
 import { SubjectDemo1 } from '../subject-demo1/subject-demo1';
+import { SignalDemo1 } from '../signal-demo1/signal-demo1';
+import { SignalDemo2 } from '../signal-demo2/signal-demo2';
 
 @Component({
   selector: 'app-body',
@@ -28,7 +30,9 @@ import { SubjectDemo1 } from '../subject-demo1/subject-demo1';
     // EmployeeList
     // ObservablesDemo1
     // ObservablesDemo2
-    SubjectDemo1,
+    // SubjectDemo1,
+    // SignalDemo1
+    SignalDemo2
   ],
   templateUrl: './body.html',
   styleUrl: './body.css',
