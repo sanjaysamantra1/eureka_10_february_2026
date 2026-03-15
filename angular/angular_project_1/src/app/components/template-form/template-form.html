@@ -1,0 +1,27 @@
+<h3 class="text-center">Let's Learn Template Driven Form</h3>
+
+<div class="col-sm-4 offset-4 border border-3">
+  <form #userForm="ngForm" (submit)="submitUserForm(userForm.value)">
+    <div>
+      FirstName: <input name="firstName" #firstName="ngModel" [(ngModel)]="user.firstName" required minlength="5" />
+      @if (firstName.hasError('required')) {
+        <div class="text-danger">FirstName is required</div>
+      }
+      @if (firstName.hasError('minlength')) {
+        <div class="text-danger">FirstName should have minimum 5 chars</div>
+      }
+    </div>
+    <div>LastName: <input name="lastName" ngModel #firstName="ngModel" [(ngModel)]="user.lastName"/> </div>
+    <div>Email: <input name="email" ngModel /> </div>
+    <div ngModelGroup="address">
+      <div>City: <input name="city" ngModel /> </div>
+      <div>State: <input name="state" ngModel /> </div>
+      <div>pincode: <input name="pincode" ngModel /> </div>
+    </div>
+
+    <input type="reset" value="Reset" />
+    <input type="submit" value="Submit" />
+  </form>
+
+  <pre> {{userForm.value | json}} </pre>
+</div>

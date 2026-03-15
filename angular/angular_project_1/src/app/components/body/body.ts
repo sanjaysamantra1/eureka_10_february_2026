@@ -1,3 +1,4 @@
+import { FormDemo1 } from './../form-demo1/form-demo1';
 import { ObservablesDemo1 } from './../observables-demo1/observables-demo1';
 import { Component } from '@angular/core';
 import { DataBinding } from '../data-binding/data-binding';
@@ -14,6 +15,8 @@ import { ObservablesDemo2 } from '../observables-demo2/observables-demo2';
 import { SubjectDemo1 } from '../subject-demo1/subject-demo1';
 import { SignalDemo1 } from '../signal-demo1/signal-demo1';
 import { SignalDemo2 } from '../signal-demo2/signal-demo2';
+import { TemplateForm } from '../template-form/template-form';
+import { ModelForm } from '../model-form/model-form';
 
 @Component({
   selector: 'app-body',
@@ -32,7 +35,10 @@ import { SignalDemo2 } from '../signal-demo2/signal-demo2';
     // ObservablesDemo2
     // SubjectDemo1,
     // SignalDemo1
-    SignalDemo2
+    // SignalDemo2
+    // FormDemo1
+    // TemplateForm
+    ModelForm
   ],
   templateUrl: './body.html',
   styleUrl: './body.css',
