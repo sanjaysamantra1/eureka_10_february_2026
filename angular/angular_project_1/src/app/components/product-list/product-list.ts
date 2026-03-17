@@ -10,9 +10,11 @@ import { Textonly } from '../../custom_directives/textonly';
 import { Disablepaste } from '../../custom_directives/disablepaste';
 import { DisableContextMenu } from '../../custom_directives/disable-context-menu';
 import { Zoomin } from '../../custom_directives/zoomin';
+import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-product-list',
   imports: [
+    RouterLink,
     FormsModule,
     FontAwesomeModule,
     NgxPaginationModule,

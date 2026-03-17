@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { UserRoleService } from './../../services/user-role';
+import { Component, inject } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
@@ -11,5 +12,10 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   standalone: true
 })
 export class Navbar {
-
+  userRoleService = inject(UserRoleService);
+  currentUser_Role :string = '';
+  
+  constructor(){
+    this.currentUser_Role = this.userRoleService.getUserRole();
+  }
 }
