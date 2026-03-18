@@ -1,1 +1,11 @@
 <p>contactus works!</p>
+
+
+<div>Form has changes: {{isDirty}}</div>
+
+<form #myForm="ngForm" (submit)="submitMyForm()">
+  <div>FirstName: <input name="firstName" ngModel /> </div>
+  <div>LastName: <input name="lastName" ngModel /> </div>
+
+  <input type="submit" value="Submit">
+</form>
