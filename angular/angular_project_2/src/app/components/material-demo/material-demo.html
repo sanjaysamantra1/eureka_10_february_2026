@@ -1,0 +1,130 @@
+<h3 class="text-center">Let's Learn Angular Material</h3>
+
+<div class="border border-3 rounded m-3 p-3">
+  <h4>Button:</h4>
+  <button matButton>Basic Button</button>
+  <button matButton="elevated">Elevated Button</button>
+  <button matButton="outlined" class="mx-2">outlined Button</button>
+  <button matButton="filled" class="mx-2">filled Button</button>
+  <button matButton="tonal" (click)="f1()">tonal Button</button>
+</div>
+
+<div class="border border-3 rounded m-3 p-3">
+  <h4>Card:</h4>
+  <mat-card class="example-card col-sm-4" appearance="outlined">
+    <mat-card-header>
+      <mat-card-title-group>
+        <mat-card-title>Shiba Inu</mat-card-title>
+        <mat-card-subtitle>Medium</mat-card-subtitle>
+        <img mat-card-md-image src="https://material.angular.dev/assets/img/examples/shiba2.jpg"
+          alt="Image of a Shiba Inu">
+      </mat-card-title-group>
+    </mat-card-header>
+    <mat-card-content>
+      {{longText}}
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<div class="border border-3 rounded m-3 p-3">
+  <h4>Dialog:</h4>
+  <button matButton="outlined" (click)="openDialog()">open dialog</button>
+</div>
+
+<div class="border border-3 rounded m-3 p-3">
+  <h4>Spinner:</h4>
+  <mat-spinner></mat-spinner>
+</div>
+
+<div class="border border-3 rounded m-3 p-3">
+  <h4>Snackbar:</h4>
+  <button matButton="outlined" (click)="openSnackBar()">Show SnackBar</button>
+</div>
+
+
+<div class="border border-3 rounded m-3 p-3">
+  <h4>Stepper:</h4>
+  <mat-stepper orientation="vertical" #stepper>
+    <mat-step [stepControl]="firstFormGroup">
+      <form [formGroup]="firstFormGroup">
+        <ng-template matStepLabel>Fill out your name</ng-template>
+        <mat-form-field>
+          <mat-label>Name</mat-label>
+          <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+        </mat-form-field>
+        <div>
+          <button matButton matStepperNext>Next</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup">
+      <form [formGroup]="secondFormGroup">
+        <ng-template matStepLabel>Fill out your address</ng-template>
+        <mat-form-field>
+          <mat-label>Address</mat-label>
+          <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY" required>
+        </mat-form-field>
+        <div>
+          <button matButton matStepperPrevious>Back</button>
+          <button matButton matStepperNext>Next</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Done</ng-template>
+      <p>You are now done.</p>
+      <div>
+        <button matButton matStepperPrevious>Back</button>
+        <button matButton (click)="stepper.reset()">Reset</button>
+      </div>
+    </mat-step>
+  </mat-stepper>
+</div>
+
+
+<div class="border border-3 rounded m-3 p-3">
+  <h4>table:</h4>
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <ng-container matColumnDef="position">
+      <th mat-header-cell *matHeaderCellDef> No. </th>
+      <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef> Name </th>
+      <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="weight">
+      <th mat-header-cell *matHeaderCellDef> Weight </th>
+      <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="symbol">
+      <th mat-header-cell *matHeaderCellDef> Symbol </th>
+      <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+
+</div>
+
+
+<div class="border border-3 rounded m-3 p-3">
+  <h4>Tabs:</h4>
+  <mat-tab-group>
+    <mat-tab label="movies">
+      <app-movies></app-movies>
+    </mat-tab>
+    <mat-tab label="songs">
+       <app-songs></app-songs>
+    </mat-tab>
+  </mat-tab-group>
+</div>
