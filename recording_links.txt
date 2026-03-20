@@ -125,3 +125,7 @@ Passcode: Ag7wbY&n
 day_31_march_19:
 https://zoom.us/rec/share/Juw1j1mxNill1WcYyeZH_ApMmfGCKI3RMQy7mfUDaBt41jEkhWvxP7hc9zwrrfC0.6sXBsxosQFM3DQYH 
 Passcode: V0uktPr.
+
+day_32_march_20:
+https://zoom.us/rec/share/oFdTUgecCTrfIJG8zIlbS8MzUOy21YUQid3YjzErU803ljbLS-8POiYnytlfXk5R.C-mac-KlotXfs8mz 
+Passcode: bbxN1pN?
